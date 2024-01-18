@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link type="text/css" rel="stylesheet" href="instructorStyle.css" />
+  </head>
+  <body>
+
+    <h1>Instructor Page</h1>
+    <a href="course.html">Course Page</a>
+    <div class="formEntity">
+      <label for="instructorName">Instructor Name</label>
+      <input type="text" id="instructorName" placeholder="Enter Instructor Name" />
+
+      <label for="instructorPhone">Instructor Phone</label>
+      <input type="text" id="instructorPhone" placeholder="Enter Instructor Phone" />
+
+      <label for="instructorAddress">Instructor Address</label>
+      <input type="text" id="instructorAddress" placeholder="Enter Instructor Address" />
+
+      <button id="addInstructor" onclick="addInstructor()">Add Instructor</button>
+    </div>
+
+    <table id="instructors">
+      <head>
+        <th>Instructor Id</th>
+        <th>Instructor Name</th>
+        <th>Instructor Phone</th>
+        <th>Instructor Address</th>
+      </head>
+      <tbody id="tableBody"></tbody>
+    </table>
+
+    <h2>Instructor Update</h2>
+    <div class="formEntity">
+      <label for="instructorIdUpdate">InstructorId</label>
+      <input type="text" id="instructorIdUpdate" placeholder="Enter Instructor Id" />
+
+      <label for="instructorNameUpdate">InstructorName</label>
+      <input type="text" id="instructorNameUpdate" placeholder="Enter Instructor Name" />
+      <label for="instructorPhoneUpdate">InstructorPhone</label>
+      <input type="text" id="instructorPhoneUpdate" placeholder="Enter Instructor Phone" />
+      <label for="instructorAddressUpdate">InstructorAddress</label>
+      <input type="text" id="instructorAddressUpdate" placeholder="Enter Instructor Address" />
+
+      <button id="addInstructor" onclick="updateInstructor()">Update Instructor</button>
+    </div>
+
+    <h2>Instructor Delete</h2>
+    <div class="formEntity">
+      <label for="instructorIdDelete">InstructorId</label>
+      <input type="text" id="instructorIdDelete" placeholder="Enter Instructor Id" />
+
+      <button id="addInstructor" onclick="deleteInstructor()">Delete Instructor</button>
+    </div>
+    
+    <script src="instructorScript.js"></script>
+  </body>
+</html>

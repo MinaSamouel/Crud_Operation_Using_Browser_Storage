@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link type="text/css" rel="stylesheet" href="courseStyle.css" />
+  </head>
+  <body>
+    <h1>Course Page</h1>
+    <a href="instructor.html">Instructor Page</a>
+    <div class="formEntity">
+      <label for="courseName">CourseName</label>
+      <input type="text" id="courseName" placeholder="Enter Course Name" />
+
+      <label for="courseHours">CourseHours</label>
+      <input type="text" id="courseHours" placeholder="Enter Course Hours" />
+
+      <button id="addCourse" onclick="addCourse()">Add Course</button>
+    </div>
+
+    <table id="courses">
+      <head>
+        <th>Course Id</th>
+        <th>Course Name</th>
+        <th>Course Hours</th>
+      </head>
+      <tbody id="tableBody"></tbody>
+    </table>
+
+    <h2>Course Update</h2>
+    <div class="formEntity">
+      <label for="courseIdUpdate">CourseId</label>
+      <input type="text" id="courseIdUpdate" placeholder="Enter Course Id" />
+
+      <label for="courseNameUpdate">CourseName</label>
+      <input type="text" id="courseNameUpdate" placeholder="Enter Course Name" />
+
+      <label for="courseHoursUpdate">CourseHours</label>
+      <input type="text" id="courseHoursUpdate" placeholder="Enter Course Hours" />
+
+      <button id="addCourse" onclick="updateCourse()">Update Course</button>
+    </div>
+
+    <h2>Course Delete</h2>
+    <div class="formEntity">
+      <label for="courseIdUpdate">CourseId</label>
+      <input type="text" id="courseIdDelete" placeholder="Enter Course Id" />
+
+      <button id="addCourse" onclick="deleteCourse()">Delete Course</button>
+    </div>
+    
+    <script src="courseScript.js"></script>
+  </body>
+</html>
