@@ -2,13 +2,8 @@ let instructorName = document.getElementById("instructorName");
 let instructorPhone = document.getElementById("instructorPhone");
 let instructorAddress = document.getElementById("instructorAddress");
 
-let elementKey = "Instructors";
 let instructorList = [];
-if (!localStorage.getItem(elementKey)) {
-  localStorage.setItem(elementKey, JSON.stringify(instructorList));
-} else {
-  instructorList = JSON.parse(localStorage.getItem(elementKey));
-}
+let elementKey = "Instructors";
 
 displayInstuctors();
 

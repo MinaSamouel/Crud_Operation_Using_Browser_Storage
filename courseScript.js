@@ -1,14 +1,9 @@
 let courseName = document.getElementById("courseName");
 let courseHours = document.getElementById("courseHours");
 
+let courseList = [];
 let elementKey = "Courses";
-let courseList;
-if(!localStorage.getItem(elementKey)){
-  localStorage.setItem(elementKey,JSON.stringify(courseList));
-}
-else{
-  courseList = JSON.parse(localStorage.getItem(elementKey));
-}
+
 displayCourses();
 
 function addCourse() {
